@@ -1,0 +1,52 @@
+:root {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 2em;
+}
+
+input {
+	width: 80%;
+	font-size: 1em;
+	text-align: center;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+button {
+	font-size: 2em;
+}
+
+.msg {
+	margin: 1.5rem 0;
+	background-color: #d5a8d683;
+	width: 30%;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 200ms ease-in-out;
+}
+
+/* example 1 */
+ /* body :not(h1) {
+	border: blue solid 2px;
+} */
+
+/* example 2 */
+:placeholder-shown {
+	border-bottom: rebeccapurple solid 2px;
+}
+
+/* example 2 */
+input:not(:placeholder-shown) + .msg {
+	opacity: 1;
+	/* border-bottom: rebeccapurple solid 2px; */
+}

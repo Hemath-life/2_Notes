@@ -1,0 +1,62 @@
+---------------------------------------------First Day---------------------------------------------------
+
+> What's computer ?
+        _ computer used ot  solve a problem.
+        _ computer understand and  'binary values'.
+                - which is 0's and 1's values.
+
+> What's Decimal  binary?
+        _ Decimal understand by human.
+               - Dec means 10 numbers 0 to 9.
+        _ bi means "two".
+        _ binary value is 0 and 1.
+
+> computer psychical resource is electronic
+        _ on or off
+        _ yes or no 
+        _ 0 or 1 
+        all above same.
+        _ here we use switch on or off to represent binary value. 1 on 0 off 
+        _ transistor is tiny little switch.
+        _ to show 2 Decimal to binary 2 switch trun on there some electricity will be given all of other switch will be off
+
+>What's bit  and byte?
+        _ bit is 0 and 1.
+        _ byte is 8 bit .which means 8 0s and 8 1s.
+
+
+> What's Transistors ?
+        _ transistor is tiny little switch. which have millions or billions in our mobile and computer.
+        _ if your want to represent  Decimal value 3  to binary  only 2  switch(2 transistor 2 (821->011)) is enough.
+        and there only electric send and it represent where 3 values and store it.
+        _ having 1 transistor we can create 2 combinations  0 1 . 2 transistor goes 2 combinations  0 1,1 0 etc.
+        _when we want to increase the bit size it gonna increase Transistors.
+        _in mobile we have billions of transistor.
+        _example:
+                -formula 120 ....... 16 8 4 2 1 to represent Decimal.
+                -represent 3 number in binary 2 (421->011)transistor is enough.  
+                -represent 10 number in binary 3(421->110)  transistor is enough.
+
+
+> Ascii and unicode ?
+        _ Ascii follow 8 bit only which is now enough now then we find unicode 
+        _ unicode use 8 or 16 or 32 or 48 like 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+> whats algorithm ?
+        _ step by step process to solve a problem
+        _ find the name in phone book
+               sudo code is syntax:
+                1  pick up phone book
+                2  open middle of the phone book
+                3  look at the page
+                4  if smith is on page
+                5       funded
+                6  else if smith is earlier in book
+                7        open to middle of left half  of book
+                8        go back to line 3
+                9  else if smith is later in the book
+                10      open to middle of right half  of book
+                11       go to line 3 
+                12 else
+                        quite

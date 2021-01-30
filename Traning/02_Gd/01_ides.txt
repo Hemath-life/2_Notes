@@ -1,0 +1,9 @@
+P - Politics
+E - Economical
+S - Sociological
+T- Technology
+L- Legal
+E- Environmental
+
+
+brew install git

@@ -1,0 +1,131 @@
+> Search 
+    _ we to do
+> Knowledge 
+    _P->Q
+    _P/Q
+> Uncertainty
+> Optimization
+> Learning
+    _ past experiences and past data
+> Neural Networks 
+> Language
+
+
+s - state
+a - action
+------< Search >-------
+> Search Problem ?
+    _ like chase game 
+    _ Map
+
+    _ nods representing state 
+    _ action we take one particular state to another state. change one sate to another state
+    _ what happens when we take that action
+    _ The set of all states reachable from the initial state by any sequence of actions.
+        - initial to end all action represent sate space
+
+
+
+> agent
+    _ entity that perceives its environment and acts upon that environment
+        - car its gonna do  here the car is agent
+
+
+
+
+> State
+    _ nods representing state
+    _ a configuration of the agent and its environment
+    _ initial State
+        - the state in which the agent begins
+
+
+
+> Actions
+    _ action takes one state to another sate
+    - choices that can be made in a state.
+            ~ actions(s) return the set of actions that can be executed  in sate s
+   
+
+
+> Transition model
+    - what happens when we take that action
+    - A description of what state results from performing any applicable action in any state.
+        - result(s,a) returns the state resulting from performing action a in state s  
+
+
+
+> State space 
+    _ The set of all states reachable from the initial state by any sequence of actions.
+
+
+
+> goal test
+    _ way to determine whether a given state is a goal state.
+
+> Path cost
+    _ numerical cost associated with a given Path 
+    _ to find the goal how expensive. 
+
+
+
+Search Problem
+    _ initial state
+    _actions
+    _ Transition model
+    _ goal test
+    _ path cost function
+
+
+> Solution 
+ _ A sequence of actions that leads from the  initial state to a goal state.
+
+
+
+> Optimal Solution
+    _ A Solution that has the lowest path cost among all solutions.
+
+
+
+> Node
+    _ a data structure that keeps track of 
+    _ a state
+    _ p parent (node that generated this node)
+    _ an action ( action applied to parent to get node)
+    _ a path cost (from initial state to node)    
+
+
+----------------------------------------------------------------------------
+> Approach
+    _ start with a frontier that contains the initial state.
+    _repeat:
+        - if the frontier  is empty, then no solution.
+        - remove a node from the frontier.
+        - if node contains goal state , return the solution.
+        - Expand node , add resulting nodes to the frontier.
+
+
+ > Revised Approach
+   _ start with a frontier that contains the initial state.
+   _  start with an empty explored set.
+   _repeat:
+        - if the frontier is empty , then no solution
+        - remove a node from the frontier
+        - if node contains goal state, return the solution.
+        - add the node to the explored set.
+        - expand the node, add resulting nodes to the frontier if they aren't 
+        already in the frontier or the explored set.
+
+
+-------------------------- Search algorithm -------------------
+> depth-first Search
+    _ Search algorithm that always expands the deepest node in the frontier
+    _ Data structure:
+        - stack 
+            ~ last-in first-out data type.    
+
+> breadth-first Search
+    _ Search algorithm that always expands the shallowest node in the frontier
+        _ Data structure:
+            - queue
+               ~ first-in first-out type  

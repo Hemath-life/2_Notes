@@ -1,0 +1,64 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	place-items: center;
+	background: lightblue;
+	grid-gap: 2em;
+}
+
+.card {
+	background: white;
+}
+span {
+	height: 100px;
+	display: block;
+	width: 100%;
+	background: #71a6b8;
+}
+
+p.date {
+	text-align: center;
+	font-size: 0.7em;
+	text-transform: uppercase;
+}
+h3 {
+	margin: 0;
+}
+p.desc {
+	font-size: 0.9em;
+}
+
+/* solution here */
+body {
+	padding: 2rem;
+}
+.content {
+	padding: 2rem 1.5rem;
+}
+
+p.date {
+	font-size: 1rem;
+	padding: 0;
+	margin: 0rem 0 0 0;
+	text-align: start;
+	color: rgba(0, 0, 0, 0.671);
+}
+
+h3 {
+	font-size: 2rem;
+	margin: 0;
+	color: rgba(0, 0, 0, 0.856);
+}
+
+p.desc {
+	margin: 0.5rem 0rem;
+	margin-bottom: 0;
+	color: rgba(0, 0, 0, 0.671);
+}

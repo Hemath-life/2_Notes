@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aethetic & Cosmetic Service Website Design</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			outline: none;
+		}
+		body{
+			overflow-x: hidden;
+			font-family: Roboto, 'sans-serif';
+			background-color: #000;
+		}
+
+		.topbar{
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			background-color: #ff7878;
+			color: #fff;
+			padding: 6px;
+			font-size: 12px;
+			text-align: center;
+		}
+		header nav{
+			position: absolute;
+			top: 50px;
+			left: 0;
+			right: 0;
+			z-index: 99;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			max-width: 1140px;
+			margin: 0 auto;
+			transition: all ease 0.5s;
+		}
+		header ul,
+		header .logo{
+			width: 33%;
+		}
+		header .logo{
+			text-align: center;
+		}
+		header ul li{
+			list-style: none;
+			display: inline-block;
+		}
+		header ul li a{
+			text-decoration: none;
+			color: #fff;
+			font-size: 16px;
+			font-weight: 300;
+			margin: 0 20px;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+		}
+
+		.banner{
+			position: relative;
+			height: 750px;
+			background: url(images/slide1.png) no-repeat;
+			background-size: cover;
+		}
+		.banner-text{
+			position: relative;
+			text-align: center;
+			padding-top: 300px;
+			color: #fff;
+			z-index: 9;
+		}
+		.banner-text h1{
+			font-size: 60px;
+			font-weight: 400;
+		}
+		.banner-text h6{
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 6px;
+			margin-bottom: 10px;
+		}
+		.scrolldown{
+			display: block;
+			margin-top: 220px;
+		}
+
+		.slide-thumb{
+			position: absolute;
+			top: 170px;
+			right: 135px;
+			z-index: 1;
+		}
+
+		.logo-section{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			max-width: 1140px;
+			margin: 0 auto;
+			padding: 80px 0;
+		}
+
+		.intro-slide{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #ffffff30;
+			z-index: 99;
+		}
+
+		header.sticky nav{
+			position: fixed;
+			top: 0;
+		}
+	</style>
+</head>
+<body>
+
+<div class="intro-slide"></div>
+
+<div class="wrapper">
+	<header>
+		<div class="topbar">
+			<p>SAVE 50% OFF FIRST TREATMENT</p>
+			<p>SAVE 50% OFF FIRST TREATMENT</p>
+			<p>SAVE 50% OFF FIRST TREATMENT</p>
+			<p>SAVE 50% OFF FIRST TREATMENT</p>
+		</div>
+		<nav>
+			<ul class="left">
+				<li><a href="#">Face</a></li>
+				<li><a href="#">Body</a></li>
+				<li><a href="#">Massage</a></li>
+			</ul>
+			<div class="logo">
+				<img src="images/logo.png" alt="">
+			</div>
+			<ul class="right">
+				<li><a href="#">About</a></li>
+				<li><a href="#">Reviews</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="banner">
+		<div class="banner-text">
+			<h6>AESTHETIC SERVICES</h6>
+			<h1>PERSONALIZED<br>AESTHETIC TREATMENT</h1>
+			<a href="#" class="scrolldown"><img src="images/arrow-down.png" alt=""></a>
+		</div>
+		<img class="slide-thumb" src="images/slide-thumb.png" alt="">
+	</div>
+	<div class="logo-section">
+		<img src="images/featured-logo1.png" alt="">
+		<img src="images/featured-logo2.png" alt="">
+		<img src="images/featured-logo3.png" alt="">
+		<img src="images/featured-logo4.png" alt="">
+		<img src="images/featured-logo5.png" alt="">
+		<img src="images/featured-logo6.png" alt="">
+	</div>
+</div>
+
+
+<!-- JQUERY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- ANIME JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script>
+
+
+$(function(){
+
+	$(window).scroll(function(){
+		var scroll = $(window).scrollTop();
+
+		if(scroll >= 10){
+			$("header").addClass("sticky");
+		} else {
+			$("header").removeClass("sticky");
+		}
+	});
+
+
+	anime({
+		targets: '.intro-slide',
+		scaleY: [1, 0],
+		duration: 2000,
+		easing: 'easeInOutSine'
+	});
+
+	anime({
+		targets: '.topbar',
+		translateY: [-50, 0],
+		opacity: [0, 1],
+		duration: 3000,
+		delay: 1000,
+		easing: 'easeInOutExpo'
+	});
+
+	anime({
+		targets: '.banner',
+		opacity: [0, 1],
+		duration: 5000,
+		delay: 2000,
+		easing: 'easeInOutExpo'
+	});
+
+	anime({
+		targets: '.logo',
+		opacity: {
+			value: [0, 1],
+			duration: 2000,
+			delay: 4000
+		},
+		translateY: {
+			value: [250, 0],
+			duration: 2000,
+			delay: 6000,
+		},
+		delay: 4500,
+		easing: 'easeInOutExpo'
+	});
+
+	anime({
+		targets: '.left li',
+		translateX: [200, 0],
+		opacity: [0, 1],
+		duration: 3000,
+		delay: anime.stagger(200, {start: 7500, from: 'last'}),
+		easing: 'easeInOutExpo'
+	});
+	anime({
+		targets: '.right li',
+		translateX: [-200, 0],
+		opacity: [0, 1],
+		duration: 3000,
+		delay: anime.stagger(200, {start: 7500, from: 'first'}),
+		easing: 'easeInOutExpo'
+	});
+
+	anime({
+		targets: '.banner-text h6',
+		translateY: [50, 0],
+		opacity: [0, 1],
+		duration: 2000,
+		delay: 9000,
+		letterSpacing: ['15px', '6px'],
+		easing: 'easeInOutExpo'
+	});
+	anime({
+		targets: '.banner-text h1',
+		translateY: [50, 0],
+		opacity: [0, 1],
+		duration: 2000,
+		delay: 10000,
+		letterSpacing: ['15px', '6px'],
+		easing: 'easeInOutExpo'
+	});
+
+	anime({
+		targets: '.scrolldown',
+		translateY: [-50, 0],
+		opacity: [0, 1],
+		loop: true,
+		duration: 2000,
+	});
+
+	anime({
+		targets: '.slide-thumb',
+		translateY: [250, 0],
+		opacity: [0, 1],
+		duration: 2000,
+		delay: 11000,
+		easing: 'easeInOutExpo'
+	});
+
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+01 _ Closure         
+          - closure and  curring                                             
+02 _ Borrowfun          
+          - broow th bind, borrow the function                                          
+03 _ Proj   
+          - text Node
+04 _ VarLetConst         
+          _ var let and const
+05 _ Template_LIterals 
+          - Template literals are enclosed by the backtick (` `) (grave accent) character instead of double or single quotes.
+          - Template literals are string literals allowing embedded expressions. 
+          - You can use multi-line strings and string interpolation features with them.
+          - They were called "template strings" in prior editions of the ES2015 specification.
+06 _ Double_Short                                                   
+07 _ maps 
+08 _ Spread operator on REST operator
+
+18 _ Class and Object 
+          - Setters 
+          - Getters 
+          - Private variables
+          -  Inheritance
+          -  class like a blue print
+          - if you not create constructor it create own constructor it self.
+          - in class we don't need to specify the (var,let,const) keywords while creating the variable      =  [ :) ]
+          -  private variables getter and setters
+          - getter is allows to get variable data using functions , getting data
+          - setting the data
+          -  courseList = []; which means private variable  you can't access directly but you can access via class members                    =  [ :) ]
+
+
+19 _  Inheritance ,  super() ,  static ?
+          - inheritance Sharing the parents variables and function to the children's
+          - Super allows to pass value to the parents.
+          - Static makes to the function which is not shareable Makes private to the children's
+          

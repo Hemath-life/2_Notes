@@ -1,0 +1,93 @@
+<-------------------------------------- Notes ---------------------------------------->
+this topic very importent for all infisis txs 
+amd sivel servise   
+
+
+---------------------------------------------------------------------------------------------
+
+very huge number is give and check the divisible by 3
+
+rule 1: 
+    number divide  by 2  if its last digit 0,2,4,6,8
+rule 2:
+    number divisible by 3 if the sum of its digits is divisible by 3
+rule 3:
+    number divisible by 4 if the number represent by its last two digits is  divisible by 4
+
+
+
+rule 2:
+short cut :
+divisible by 3
+3271298 divisible by 3 or Not ?
+    randomly we can do thise
+    3 divisible by 3
+    9 divisible by 3
+    2+7 divisible by 3
+    1+2 divisible by 3
+    8 not divisible by 3
+    not //
+981726327123  divisible by 3 or Not ?
+    9 divisible by 3
+    8+1 divisible by 3
+    7+2 divisible by 3
+    6 divisible by 3
+    3 divisible by 3
+    2+7 divisible by 3
+    1+2 divisible by 3
+    3 divisible by 3
+    yes divide
+
+
+3&9 are similar 
+    you can chose 9 indtad of 3 also becose 9 is divisible by 3
+
+1233726372 % 9 ?
+    1+2+3+3
+    7+2
+    6+3
+    7+2
+    yes//
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    rule 3:
+    number divisible by 4 if the number represent by its last two digits is  divisible by 4
+
+2^2( last 2 digit) --- 4
+2^3(last 3 digit) ---8
+2^4(last 4 digit) --- 16
+
+----------- divisible by 4-----------
+2024 -- last is 24
+    is divisible by 4
+
+12345678- last 78  
+    is not divisible by 4
+
+----------- divisible by 8-----------
+86236482 - last 3 digit 482
+    not divisible by 8
+
+short come 
+last tow places ending with 00 --- divisible  by 4
+last tow places ending with 000 ---- divide by 8
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+rule : 5
+last digit is 0 or 5  are divisible by 5 
+
+2305 - last 5
+
+10 are similar 
+10 are last is 0 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+rule : 6 
+divisible both by 2 and 3. it should be 6 divisible.
+
+
+divisible by 12  divisible 
+4 and 3
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

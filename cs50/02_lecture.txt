@@ -1,0 +1,21 @@
+> usually in programing language we see
+    _ function
+    _ conditions
+    _ boolean expressions
+    _ loops 
+    _ etc
+
+>  - correctness
+    - designs
+    - style
+
+
+---------------------------- C Programing ----------------------------------
+
+
+> What's C programing language ?
+   _
+
+> What is functions ?
+    - function are mini program they dose something .
+    - arguments or parameters

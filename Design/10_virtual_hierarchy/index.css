@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	padding: 2em;
+	background: #5801cb;
+	color: white;
+	font-family: "Nunito";
+}
+h1 {
+	font-size: 1.1em;
+}
+
+.form-container {
+	padding: 2em;
+	display: grid;
+	grid-template-columns: 70% auto;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas:
+		"label label"
+		"submit button"
+		"info info";
+}
+
+label {
+	display: block;
+	font-size: 1.1em;
+	grid-area: label;
+	margin-bottom: 0.8em;
+}
+input[type="text"] {
+	width: 90%;
+	padding: 0.5em;
+}
+input[type="submit"] {
+	padding: 0.5em;
+	font-size: 0.8em;
+	background: none;
+	border: 1px solid white;
+	color: white;
+	cursor: pointer;
+}
+p {
+	grid-area: info;
+}
+
+/* Improvements */
+
+h1 {
+	font-size: 3em;
+}
+
+.form-container {
+	background: #6900f3;
+}
+
+label {
+	font-size: 1.5em;
+	color: rgba(240, 248, 255, 0.801);
+}
+
+input[type="submit"] {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+p {
+	color: rgba(255, 255, 255, 0.363);
+}
+input[type="submit"]:hover {
+	color: #5801cb;
+	background-color: rgb(255, 255, 255);
+}
+
+h1 {
+	font-size: 3em;
+}
+
+.form-container {
+	background: #6900f3;
+}
+
+label {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+input[type="submit"] {
+	font-size: 1em;
+	background: #ffed8c;
+	color: #5801cb;
+	border: none;
+	font-weight: bold;
+}
+
+p {
+	color: #caa2ff;
+}

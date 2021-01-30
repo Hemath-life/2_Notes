@@ -1,0 +1,9 @@
+
+    _ targets :" "  ( target elements ) 
+        - Can be any CSS selector.
+        - Pseudo elements can't be targeted using JavaScript.
+    _ translateX : 
+    _ backgroundColor:
+    _  borderRadius: ['0%', '10%'],
+    _ easing:
+    _ duration: 3000 ms
